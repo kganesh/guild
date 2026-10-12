@@ -41,7 +41,7 @@ Those four are what this repository exists to demonstrate.
 | `frontend/` | TypeScript + React + Vite + Tailwind client |
 | `design/screens/` | Static mockups of the member-facing screens |
 
-## Architecture in one paragraph
+## Architecture
 
 A modular monolith with one package per bounded context and import boundaries
 enforced in CI, so services can be extracted later without a rewrite. Aggregate
@@ -51,7 +51,65 @@ outbox. Every partner — clearing, banking — sits behind a four-method adapte
 replacement for a real integration. Agents draft, explain and monitor; they are never
 on the critical order path, which is deterministic code.
 
-See [`docs/architecture.md`](docs/architecture.md).
+```mermaid
+flowchart TB
+    Client["Web client<br/>React · Vite · Tailwind"] --> API["API · FastAPI"]
+
+    subgraph domain ["Domain — boundaries enforced by import-linter"]
+        direction LR
+        G["guild<br/>proposals · ballots · strategy"]
+        T["trading<br/>batching · allocation · fills"]
+        L["ledger<br/>sub-ledger · statements"]
+        R["recon<br/>three-way · breaks · freeze"]
+    end
+
+    API --> G
+    G -- "StrategyVersionPublished" --> OUT[("outbox<br/>same transaction as state")]
+    OUT --> PUB["publisher"]
+    PUB --> T
+    PUB --> PROJ["projections<br/>Strategy View · balances"]
+    T --> ACL["partner adapter<br/>place · cancel · positions · reconcile"]
+    ACL --> SIM["simulator<br/>partial fills · duplicates · drift"]
+    SIM -. "position + cash files" .-> R
+    T --> L
+    L --> R
+    R -- "break detected" --> FREEZE["account frozen"]
+
+    AG["agents<br/>draft · explain · monitor"] -.->|"read-only, never the order path"| API
+
+    classDef core fill:#1C6B52,stroke:#124536,color:#fff
+    classDef sim fill:#B44A2E,stroke:#7d3420,color:#fff
+    class G,T core
+    class SIM,FREEZE sim
+```
+
+### One decision, every member's own account
+
+```mermaid
+sequenceDiagram
+    participant M as Members
+    participant P as Proposal
+    participant S as GuildStrategy
+    participant RB as MemberRebalance
+    participant B as OrderBatch
+    participant X as Partner
+
+    M->>P: cast ballots
+    P->>P: decide under rules frozen at submission
+    P->>S: compare-and-set on base version
+    S-->>RB: fan out, one per member, independent
+    RB->>RB: eligibility, limits, sizing, netting
+    RB-->>M: consent card
+    M->>B: approve, collected into a batching window
+    B->>B: seal allocation statement BEFORE submission
+    B->>X: one block order, idempotency key
+    X-->>B: fills at several prices
+    B->>B: volume-weighted average, allocated pro-rata
+    Note over B,X: every account books the same price;<br/>rounding residual sits with the firm
+```
+
+Full detail in [`docs/architecture.md`](docs/architecture.md) and
+[`docs/domain-model.md`](docs/domain-model.md).
 
 ## The simulator is the demo
 
