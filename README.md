@@ -105,7 +105,7 @@ sequenceDiagram
     B->>X: one block order, idempotency key
     X-->>B: fills at several prices
     B->>B: volume-weighted average, allocated pro-rata
-    Note over B,X: every account books the same price;<br/>rounding residual sits with the firm
+    Note over B,X: every account books the same average price<br/>and the rounding residual sits with the firm
 ```
 
 Full detail in [`docs/architecture.md`](docs/architecture.md) and
