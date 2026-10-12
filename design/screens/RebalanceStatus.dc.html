@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebalance status</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column; padding: 28px 20px 22px; gap: 14px">
+  <a href="Main.dc.html" style="font-size: 14px; text-decoration: none">Back to Guild</a>
+
+  <div style="display: flex; flex-direction: column; gap: 6px">
+    <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 27px; font-weight: 400">Your orders are filled</h1>
+    <p style="margin: 0; font-size: 14px; color: #5C6570; line-height: 1.45">You and 37 other members traded in one batch, so everyone paid the same average price.</p>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; gap: 12px; align-items: flex-start">
+      <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C6B52; margin-top: 5px"></div>
+      <div style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">You approved</span><span style="font-size: 13px; color: #5C6570">11:06:52am</span></div>
+    </div>
+    <div style="display: flex; gap: 12px; align-items: flex-start">
+      <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C6B52; margin-top: 5px"></div>
+      <div style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Batched with 37 members</span><span style="font-size: 13px; color: #5C6570">11:06:58am · allocation recorded before the order went out</span></div>
+    </div>
+    <div style="display: flex; gap: 12px; align-items: flex-start">
+      <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C6B52; margin-top: 5px"></div>
+      <div style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Sent to market</span><span style="font-size: 13px; color: #5C6570">11:07:02am</span></div>
+    </div>
+    <div style="display: flex; gap: 12px; align-items: flex-start">
+      <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C6B52; margin-top: 5px"></div>
+      <div style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Filled</span><span style="font-size: 13px; color: #5C6570">11:07:14am</span></div>
+    </div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 11px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">WHAT YOU GOT</span>
+    <div style="display: flex; justify-content: space-between; font-size: 15px"><span>Semiconductor ETF</span><span style="font-weight: 700; color: #1C6B52">8.2114 shares</span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 15px"><span>Average price</span><span style="font-weight: 700">$62.5940</span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 15px"><span>Total</span><span style="font-weight: 700">$514.00</span></div>
+    <p style="margin: 0; font-size: 12px; color: #5C6570">The same average price applies to every member in this batch.</p>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <a href="PositionReceipt.dc.html" style="text-decoration: none; text-align: center; background: #FFFFFF; color: #12161B; border: 1px solid #C9C2B4; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 600">See this position</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

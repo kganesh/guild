@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column">
+  <div style="padding: 28px 20px 14px; display: flex; flex-direction: column; gap: 10px">
+    <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; font-weight: 400">Your money</h1>
+    <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 40px; line-height: 1">$11,842.60</span>
+    <span style="font-size: 13px; color: #5C6570">Across 3 Guild accounts, all in your name</span>
+  </div>
+
+  <div style="padding: 0 20px; display: flex; gap: 10px">
+    <div style="flex-grow: 1; background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 3px">
+      <span style="font-size: 11px; letter-spacing: 0.06em; color: #5C6570">INVESTED</span>
+      <span style="font-size: 19px; font-weight: 700">$10,904.12</span>
+      <span style="font-size: 11px; color: #5C6570">Protected by SIPC</span>
+    </div>
+    <div style="flex-grow: 1; background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 3px">
+      <span style="font-size: 11px; letter-spacing: 0.06em; color: #5C6570">CASH</span>
+      <span style="font-size: 19px; font-weight: 700">$938.48</span>
+      <span style="font-size: 11px; color: #5C6570">FDIC-insured at [BANK]</span>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 16px 20px 0; display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">BY GUILD</span>
+    <a href="PositionReceipt.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 14px; padding: 15px; display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Cohort '19</span><span style="font-size: 13px; color: #5C6570">6 holdings · matches v15</span></div>
+      <span style="font-size: 17px; font-weight: 700">$4,283.10</span>
+    </a>
+    <a href="PositionReceipt.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 14px; padding: 15px; display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Sunday Roasters</span><span style="font-size: 13px; color: #5C6570">4 holdings · one version behind</span></div>
+      <span style="font-size: 17px; font-weight: 700">$5,120.44</span>
+    </a>
+    <a href="PositionReceipt.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 14px; padding: 15px; display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Ward 4 Savers</span><span style="font-size: 13px; color: #5C6570">3 holdings · matches v8</span></div>
+      <span style="font-size: 17px; font-weight: 700">$2,439.06</span>
+    </a>
+  </div>
+
+  <nav style="border-top: 1px solid #E3DED4; background: #FFFFFF; padding: 12px 20px 22px; display: flex; justify-content: space-between">
+    <a href="Main.dc.html" style="font-size: 13px; color: #5C6570; text-decoration: none; padding: 8px 10px">Guilds</a>
+    <a href="PortfolioHome.dc.html" style="font-size: 13px; font-weight: 700; color: #12161B; text-decoration: none; padding: 8px 10px">Portfolio</a>
+    <a href="MirrorProfile.dc.html" style="font-size: 13px; color: #5C6570; text-decoration: none; padding: 8px 10px">Discover</a>
+    <a href="SetRules.dc.html" style="font-size: 13px; color: #5C6570; text-decoration: none; padding: 8px 10px">Me</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: guild
+      POSTGRES_PASSWORD: guild
+      POSTGRES_DB: guild
+    ports:
+      - "5432:5432"
+    volumes:
+      - guild-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U guild"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Deliberately absent: Kafka, Kubernetes, Terraform. The proof of concept runs on
+  # Postgres and an outbox poller; production machinery is a later milestone and would
+  # only slow the thing this repository exists to prove. See ADR 0002.
+
+volumes:
+  guild-pgdata:

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>League standings</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column; padding: 28px 20px 22px; gap: 13px">
+  <div style="display: flex; flex-direction: column; gap: 4px">
+    <span style="font-size: 12px; letter-spacing: 0.1em; color: #5C6570">SEASON 3 · 4 WEEKS LEFT</span>
+    <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; font-weight: 400">Chicago league</h1>
+    <p style="margin: 0; font-size: 13px; color: #5C6570">Ranked by return per unit of risk, never by raw return.</p>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 6px 16px; display: flex; flex-direction: column">
+    <div style="display: flex; padding: 11px 0; border-bottom: 1px solid #F0EEE7">
+      <span style="font-size: 11px; letter-spacing: 0.06em; color: #5C6570; width: 24px">#</span>
+      <span style="font-size: 11px; letter-spacing: 0.06em; color: #5C6570; flex-grow: 1">GUILD</span>
+      <span style="font-size: 11px; letter-spacing: 0.06em; color: #5C6570; width: 52px; text-align: right">RISK-ADJ</span>
+      <span style="font-size: 11px; letter-spacing: 0.06em; color: #5C6570; width: 56px; text-align: right">WORST</span>
+    </div>
+    <div style="display: flex; align-items: center; padding: 13px 0; border-bottom: 1px solid #F0EEE7">
+      <span style="font-size: 14px; color: #5C6570; width: 24px">1</span>
+      <span style="font-size: 15px; flex-grow: 1">Ward 4 Savers</span>
+      <span style="font-size: 15px; font-weight: 700; color: #1C6B52; width: 52px; text-align: right">1.51</span>
+      <span style="font-size: 14px; width: 56px; text-align: right">&#8722;6.2%</span>
+    </div>
+    <div style="display: flex; align-items: center; padding: 13px 0; border-bottom: 1px solid #F0EEE7; background: #F7F5F0">
+      <span style="font-size: 14px; color: #5C6570; width: 24px">2</span>
+      <div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Cohort '19</span><span style="font-size: 12px; color: #5C6570">your Guild</span></div>
+      <span style="font-size: 15px; font-weight: 700; color: #1C6B52; width: 52px; text-align: right">1.42</span>
+      <span style="font-size: 14px; width: 56px; text-align: right">&#8722;8.1%</span>
+    </div>
+    <div style="display: flex; align-items: center; padding: 13px 0; border-bottom: 1px solid #F0EEE7">
+      <span style="font-size: 14px; color: #5C6570; width: 24px">3</span>
+      <span style="font-size: 15px; flex-grow: 1">Sunday Roasters</span>
+      <span style="font-size: 15px; font-weight: 700; color: #1C6B52; width: 52px; text-align: right">1.19</span>
+      <span style="font-size: 14px; width: 56px; text-align: right">&#8722;11.4%</span>
+    </div>
+    <div style="display: flex; align-items: center; padding: 13px 0">
+      <span style="font-size: 14px; color: #5C6570; width: 24px">4</span>
+      <span style="font-size: 15px; flex-grow: 1">Lakeview Book Club</span>
+      <span style="font-size: 15px; font-weight: 700; color: #1C6B52; width: 52px; text-align: right">0.94</span>
+      <span style="font-size: 14px; width: 56px; text-align: right">&#8722;9.8%</span>
+    </div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 11px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">BADGES YOU HAVE EARNED</span>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <span style="font-size: 13px; background: #F0EEE7; border-radius: 999px; padding: 9px 14px">Saved 12 months running</span>
+      <span style="font-size: 13px; background: #F0EEE7; border-radius: 999px; padding: 9px 14px">Held through a 30% drop</span>
+      <span style="font-size: 13px; background: #F0EEE7; border-radius: 999px; padding: 9px 14px">Voted on every proposal</span>
+    </div>
+    <p style="margin: 0; font-size: 12px; color: #5C6570">Badges cannot be transferred, and some lower your future borrowing rate.</p>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <a href="Main.dc.html" style="text-decoration: none; text-align: center; background: #FFFFFF; color: #12161B; border: 1px solid #C9C2B4; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 600">Back to your Guild</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

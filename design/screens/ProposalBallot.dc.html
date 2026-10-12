@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Proposal and ballot</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column; padding: 28px 20px 22px; gap: 13px">
+  <div style="display: flex; justify-content: space-between; align-items: center">
+    <a href="Main.dc.html" style="font-size: 14px; text-decoration: none">Back to Guild</a>
+    <span style="font-size: 13px; color: #5C6570">closes 4:12pm today</span>
+  </div>
+
+  <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 26px; font-weight: 400; line-height: 1.2">Shift 12% from treasuries into semis</h1>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+    <div style="display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 0.08em; color: #5C6570"><span>HOLDING</span><span>NOW &#8594; PROPOSED</span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 14px"><span>Semiconductors</span><span><span style="color: #5C6570">28%</span> &#8594; <span style="font-weight: 700; color: #1C6B52">40%</span></span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 14px"><span>Treasuries</span><span><span style="color: #5C6570">13%</span> &#8594; <span style="font-weight: 700">1%</span></span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 14px; color: #5C6570"><span>Everything else</span><span>unchanged</span></div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 7px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">DEV'S THESIS</span>
+    <p style="margin: 0; font-size: 14px; line-height: 1.45">Foundry capacity is booked through next year and pricing has not caught up yet. Treasuries are the cheapest thing to sell to fund it.</p>
+    <div style="border-top: 1px solid #F0EEE7; padding-top: 9px; display: flex; flex-direction: column; gap: 2px">
+      <span style="font-size: 12px; font-weight: 700; color: #B44A2E">Conflict disclosure</span>
+      <span style="font-size: 13px; color: #12161B; line-height: 1.4">Dev already holds 9% of his own account in semiconductors. He cannot sell them while this vote is open.</span>
+    </div>
+  </div>
+
+  <div style="background: #12161B; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 4px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #7BD3AE">IF THIS PASSES, FOR YOU</span>
+    <span style="font-size: 16px; color: #F5F3EE; font-weight: 600">Buy about $514 of semis, sell about $514 of treasuries</span>
+    <span style="font-size: 13px; color: #C7CCD3">Above your $500 limit, so you would be asked to confirm again.</span>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <div style="display: flex; flex-direction: column; gap: 9px">
+    <p style="margin: 0; font-size: 12px; color: #5C6570; text-align: center">The tally stays hidden until you vote.</p>
+    <a href="ConsentCard.dc.html" style="text-decoration: none; text-align: center; background: #1C6B52; color: #FFFFFF; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 600">Approve</a>
+    <div style="display: flex; gap: 9px">
+      <button type="button" style="flex-grow: 1; font-family: 'Manrope', sans-serif; background: #FFFFFF; color: #12161B; border: 1px solid #C9C2B4; border-radius: 12px; padding: 15px; font-size: 15px; font-weight: 600">Reject</button>
+      <button type="button" style="flex-grow: 1; font-family: 'Manrope', sans-serif; background: #FFFFFF; color: #12161B; border: 1px solid #C9C2B4; border-radius: 12px; padding: 15px; font-size: 15px; font-weight: 600">Abstain</button>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

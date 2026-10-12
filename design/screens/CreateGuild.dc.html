@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Create a Guild</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column; padding: 28px 20px 22px; gap: 13px">
+  <a href="GuildList.dc.html" style="font-size: 14px; text-decoration: none">Your Guilds</a>
+
+  <div style="display: flex; flex-direction: column; gap: 5px">
+    <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 27px; font-weight: 400">Start a Guild</h1>
+    <p style="margin: 0; font-size: 14px; color: #5C6570; line-height: 1.45">You will be a Steward: you handle admin and invites, with one vote like everyone else.</p>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+    <label for="gname" style="font-size: 14px; font-weight: 600">Name</label>
+    <input id="gname" type="text" value="Bootcamp '24" style="font-family: 'Manrope', sans-serif; font-size: 16px; padding: 13px; border: 1px solid #C9C2B4; border-radius: 10px; background: #FFFFFF; color: #12161B">
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 14px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">HOW YOU WILL DECIDE</span>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Approval needed</span><span style="font-size: 12px; color: #5C6570">Share of members who must approve</span></div>
+      <span style="font-size: 16px; font-weight: 700; color: #1C6B52">60%</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Quorum</span><span style="font-size: 12px; color: #5C6570">Minimum who must vote at all</span></div>
+      <span style="font-size: 16px; font-weight: 700; color: #1C6B52">50%</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Voting window</span><span style="font-size: 12px; color: #5C6570">Closes early once the result is certain</span></div>
+      <span style="font-size: 16px; font-weight: 700; color: #1C6B52">24 hours</span>
+    </div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">WHAT THIS GUILD MAY HOLD</span>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <span style="font-size: 14px; background: #1C6B52; color: #FFFFFF; border-radius: 999px; padding: 8px 14px">Stocks</span>
+      <span style="font-size: 14px; background: #1C6B52; color: #FFFFFF; border-radius: 999px; padding: 8px 14px">ETFs</span>
+      <span style="font-size: 14px; background: #EFEDE6; color: #5C6570; border-radius: 999px; padding: 8px 14px">Crypto — later</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <span style="font-size: 15px">Most in any one holding</span>
+      <span style="font-size: 16px; font-weight: 700; color: #1C6B52">25%</span>
+    </div>
+  </div>
+
+  <div style="background: #EFEDE6; border: 1px solid #DCD6CA; border-radius: 14px; padding: 14px">
+    <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #12161B">Changing these later needs a supermajority of members, so it is worth a minute now.</p>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <a href="GuildForming.dc.html" style="text-decoration: none; text-align: center; background: #1C6B52; color: #FFFFFF; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 600">Create and invite</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

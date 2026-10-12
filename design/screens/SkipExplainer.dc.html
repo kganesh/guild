@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebalance skipped</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column; padding: 28px 20px 22px; gap: 14px">
+  <a href="Main.dc.html" style="font-size: 14px; text-decoration: none">Back to Guild</a>
+
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 12px; letter-spacing: 0.1em; color: #5C6570">COHORT '19 · V15</span>
+    <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 27px; font-weight: 400; line-height: 1.2">This one did not run in your account</h1>
+    <p style="margin: 0; font-size: 15px; color: #5C6570; line-height: 1.45">Your account had $180 available and your share needed $514. Nothing was sold to make up the difference.</p>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">WHAT THIS MEANS</span>
+    <p style="margin: 0; font-size: 14px; line-height: 1.45">Your holdings are unchanged. Your Guild moved to v15 and you are at v14, so you hold 12% less in semis than the group's target.</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.45">Nothing is owed and nothing is overdue. The next rebalance will bring you closer if you want it to.</p>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 9px">
+    <span style="font-size: 11px; letter-spacing: 0.08em; color: #5C6570">YOUR OPTIONS</span>
+    <div style="display: flex; justify-content: space-between; font-size: 14px"><span>Add funds and catch up</span><span style="color: #5C6570">$334 needed</span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 14px"><span>Match part of it</span><span style="color: #5C6570">with $180</span></div>
+    <div style="display: flex; justify-content: space-between; font-size: 14px"><span>Stay where you are</span><span style="color: #5C6570">no action</span></div>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <div style="display: flex; flex-direction: column; gap: 9px">
+    <button type="button" style="font-family: 'Manrope', sans-serif; background: #1C6B52; color: #FFFFFF; border: none; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 600">Add funds</button>
+    <a href="Main.dc.html" style="text-decoration: none; text-align: center; background: #FFFFFF; color: #12161B; border: 1px solid #C9C2B4; border-radius: 12px; padding: 15px; font-size: 15px; font-weight: 600">Stay where I am</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Propose a change</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1C6B52}a:hover{color:#134B39}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F5F3EE; font-family: 'Manrope', system-ui, sans-serif; color: #12161B; display: flex; flex-direction: column; padding: 28px 20px 22px; gap: 12px">
+  <a href="Main.dc.html" style="font-size: 14px; text-decoration: none">Cohort '19</a>
+
+  <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 27px; font-weight: 400">Propose a change</h1>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 0.08em; color: #5C6570"><span>HOLDING</span><span>NOW &#8594; PROPOSED</span></div>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <span style="font-size: 15px">Semiconductors</span>
+      <div style="display: flex; align-items: center; gap: 10px"><span style="font-size: 14px; color: #5C6570">28%</span><input type="text" value="40%" aria-label="Semiconductors target weight" style="font-family: 'Manrope', sans-serif; width: 74px; font-size: 16px; font-weight: 700; padding: 10px; text-align: right; border: 1px solid #1C6B52; border-radius: 9px; background: #FFFFFF; color: #12161B"></div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <span style="font-size: 15px">Treasuries</span>
+      <div style="display: flex; align-items: center; gap: 10px"><span style="font-size: 14px; color: #5C6570">13%</span><input type="text" value="1%" aria-label="Treasuries target weight" style="font-family: 'Manrope', sans-serif; width: 74px; font-size: 16px; font-weight: 700; padding: 10px; text-align: right; border: 1px solid #C9C2B4; border-radius: 9px; background: #FFFFFF; color: #12161B"></div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 4px; border-top: 1px solid #F0EEE7">
+      <span style="font-size: 14px; color: #5C6570">Total across all holdings</span>
+      <span style="font-size: 15px; font-weight: 700; color: #1C6B52">100% &#10003;</span>
+    </div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 9px">
+    <label for="thesis" style="font-size: 14px; font-weight: 600">Why? Your Guild votes on this</label>
+    <textarea id="thesis" rows="3" style="font-family: 'Manrope', sans-serif; font-size: 15px; line-height: 1.4; padding: 12px; border: 1px solid #C9C2B4; border-radius: 10px; background: #FFFFFF; color: #12161B; resize: none">Foundry capacity is booked through next year and pricing has not caught up yet.</textarea>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E3DED4; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+    <span style="font-size: 12px; font-weight: 700; color: #B44A2E">Your conflict disclosure</span>
+    <p style="margin: 0; font-size: 14px; line-height: 1.45">You already hold 9% of your own account in semiconductors. Voters will see this beside your reasoning.</p>
+    <p style="margin: 0; font-size: 13px; color: #5C6570; line-height: 1.4">Submitting stops you selling semis until the vote closes.</p>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <div style="display: flex; flex-direction: column; gap: 9px">
+    <p style="margin: 0; font-size: 12px; color: #5C6570; text-align: center">Mandate checks passed. 6 of 10 must approve within 24 hours.</p>
+    <a href="ProposalBallot.dc.html" style="text-decoration: none; text-align: center; background: #1C6B52; color: #FFFFFF; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 600">Submit to your Guild</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
